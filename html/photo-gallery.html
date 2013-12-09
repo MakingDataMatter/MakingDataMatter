@@ -1,0 +1,308 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="">
+    <meta name="author" content="">
+
+    <title>Photo Gallery</title>
+
+    <!-- Bootstrap core CSS -->
+    <link href="../css/bootstrap.css" rel="stylesheet">
+    <link href="../css/global.css" rel="stylesheet">
+
+    <!-- override csss -->
+    <style type="text/css">
+
+    body{
+      margin-top: 70px;
+  }
+  .navbar-brand {
+      font-family: "Arial Rounded MT Bold", "Helvetica Rounded", Arial, sans-serif;
+      float: left;
+      padding: 15px 15px;
+      font-size: 18px;
+      line-height: 20px;
+  }
+
+  .nav{
+      font-family: "Arial Rounded MT Bold", "Helvetica Rounded", Arial, sans-serif;
+  }
+
+  .form-control {
+      margin-top: 9px;
+  }
+
+  .item.list-group-item
+  {
+    float: none;
+    width: 100%;
+    background-color: #fff;
+    margin-bottom: 10px;
+}
+.item.list-group-item:nth-of-type(odd):hover,.item.list-group-item:hover
+{
+    background: #428bca;
+}
+
+.item.list-group-item .list-group-image
+{
+    margin-right: 10px;
+}
+.item.list-group-item .thumbnail
+{
+    margin-bottom: 0px;
+}
+.item.list-group-item .caption
+{
+    padding: 9px 9px 0px 9px;
+}
+.item.list-group-item:nth-of-type(odd)
+{
+    background: #eeeeee;
+}
+
+.item.list-group-item:before, .item.list-group-item:after
+{
+    display: table;
+    content: " ";
+}
+
+.item.list-group-item img
+{
+    float: left;
+}
+.item.list-group-item:after
+{
+    clear: both;
+}
+.list-group-item-text
+{
+    margin: 0 0 11px;
+}
+
+
+
+
+</style>
+<!-- end style stuff -->
+</head>
+
+<body>
+
+    <nav class="navbar navbar-fixed-top navbar-inverse" role="navigation">
+      <div class="container">
+        <div class="navbar-header">
+          <button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".navbar-ex1-collapse">
+            <span class="sr-only">Toggle navigation</span>
+            <span class="icon-bar"></span>
+            <span class="icon-bar"></span>
+            <span class="icon-bar"></span>
+        </button>
+        <a class="navbar-brand" href="new_home.html"><span class="glyphicon glyphicon-home"></span>&nbsp;Making Data Matter</a>
+    </div>
+
+    <!-- Collect the nav links, forms, and other content for toggling -->
+    <div class="collapse navbar-collapse navbar-ex1-collapse">
+        <ul class="nav navbar-nav">
+            <li><a href="about.html"><span class="glyphicon glyphicon-tower"></span>&nbsp;About</a></li>
+          
+            <li><a href="propertycomparison.html"><span class="glyphicon glyphicon-folder-open"></span>&nbsp;&nbsp;Properties</a></li>
+
+
+            <li><a class="selected" href="photo-gallery.html"><span class="glyphicon glyphicon-picture"></span>&nbsp;Photo Gallery</a></li>
+
+            <li><a href="discussion.html"><span class="glyphicon glyphicon-comment"></span>&nbsp;Discussion</a></li>
+            <li><a href="news.html"><span class="glyphicon glyphicon-globe"></span>&nbsp; News</a></li>
+            
+            <li><input type="search" class="form-search form-control" placeholder="Enter a search term" required autofocus></li>
+
+
+             <li><a href="sign-in.html"><span class="glyphicon glyphicon-user"></span>&nbsp;Sign Up | Log In</a></li> 
+             
+          </ul>
+</div><!-- /.navbar-collapse -->
+</div><!-- /.container -->
+</nav>
+
+
+
+<div class="container">
+
+  <div class="row section">
+    <div class="col-lg-12">
+       <!-- CONTENT GOES HERE -->
+
+
+
+
+       <div class="container">
+          <h1> Photo Gallery</h1>
+          <br>
+          <div class="well well-sm">
+            <strong>Category Title &nbsp;</strong>
+            <div class="btn-group">
+                <a href="#" id="list" class="btn btn-default btn-sm"><span class="glyphicon glyphicon-th-list">
+                </span>List</a> 
+                <a href="#" id="grid" class="btn btn-default btn-sm"><span
+                    class="glyphicon glyphicon-th"></span>Grid</a>
+
+
+                </div>
+                &nbsp;<input type="search" class="form-search" placeholder="Enter a search term" >
+
+            </div>
+            <div id="products" class="row list-group">
+                <div class="item  col-xs-4 col-lg-4">
+                    <div class="thumbnail">
+                        <a href ="#"> <img class="group list-group-image" src="../img/10louie.png" alt="" width = 350 height = 218.75></a>
+                        <div class="caption">
+                            <h4 class="group inner list-group-item-heading">
+                                10 Louie Street</h4>
+                                <p class="group inner list-group-item-text">
+                                    A photo of the commercial store and apartment owned by Charles Green from August 1965. </p>
+                                    <div class="row">
+                                      <div class="col-md-12">
+
+                                        <p>
+                                          <i class="icon-user"></i> by <a href="#">Charles Green</a> 
+                                          | <i class="icon-calendar"></i> August 1965
+                                          | <i class="icon-comment"></i> <a href="#">3 Comments</a><br>
+                                          <i class="icon-tags"></i> Tags : <a href="#">1965</a> <a href-"#">louie st</a> <a href ="#">green</a></a> 
+
+                                      </p>
+                                  </div>
+                              </div>
+                          </div>
+                      </div>
+                  </div>
+                  <div class="item  col-xs-4 col-lg-4">
+                    <div class="thumbnail">
+                        <a href ="http://4.bp.blogspot.com/_tJ5Oc6OJn9k/TILDVYTmkDI/AAAAAAAAD5E/wUrHxgMBhR4/s1600/Asheville+NC+1940s+post+card.jpg"><img class="group list-group-image" src="http://4.bp.blogspot.com/_tJ5Oc6OJn9k/TILDVYTmkDI/AAAAAAAAD5E/wUrHxgMBhR4/s1600/Asheville+NC+1940s+post+card.jpg" alt="" width = 350 height = 218.75/></a>
+                        <div class="caption">
+                            <h4 class="group inner list-group-item-heading">
+                                Historic Skyline</h4>
+                                <p class="group inner list-group-item-text">
+                                    A photo of the commercial store and apartment owned by Charles Green from August 1965. </p>
+                                    <div class="row">
+                                      <div class="col-md-12">
+
+                                        <p>
+                                          <i class="icon-user"></i> by <a href="#">Jamie Band</a> 
+                                          | <i class="icon-calendar"></i> September 2007
+                                          | <i class="icon-comment"></i> <a href="#">0 Comments</a><br>
+                                          <i class="icon-tags"></i> Tags : <a href="#">2007</a> <a href-"#">photography</a> <a href ="#">band</a> <a href-"#"> skyline</a></a> 
+
+                                      </p>
+                                  </div>
+                              </div>
+                          </div>
+                      </div>
+                  </div>
+                  <div class="item  col-xs-4 col-lg-4">
+                    <div class="thumbnail">
+                        <a href="#"><img class="group list-group-image" src="http://www.terrahub.org/static/media/uploads/477.png" alt="" width = 350 height = 218.75/></a>
+                        <div class="caption">
+                            <h4 class="group inner list-group-item-heading">
+                                12 Privet Drive</h4>
+                                <p class="group inner list-group-item-text">
+                                    A photo of the commercial store and apartment owned by Charles Green from August 1965. </p>
+                                    <div class="row">
+                                      <div class="col-md-12">
+
+                                        <p>
+                                          <i class="icon-user"></i> by <a href="#">Harry Potter</a>  
+                                          | <i class="icon-calendar"></i> July 1980
+                                          | <i class="icon-comment"></i> <a href="#">7 Comments</a><br>
+                                          <i class="icon-tags"></i> Tags : <a href="#">1980</a> <a href-"#">privet drive</a> <a href ="#">potter</a></a> 
+
+                                      </p>
+                                  </div>
+                              </div>
+                          </div>
+                      </div>
+                  </div>
+                  <div class="item  col-xs-4 col-lg-4">
+                    <div class="thumbnail">
+                        <a href="#"><img class="group list-group-image" src="http://www.terrahub.org/static/media/uploads/B53-P1_Bldg2_471.png" alt="" width = 350 height = 218.75/></a>
+                        <div class="caption">
+                            <h4 class="group inner list-group-item-heading">
+                                471 S. French Broad Street</h4>
+                                <p class="group inner list-group-item-text">
+                                    A photo of the commercial store and apartment owned by Charles Green from August 1965. </p>
+                                    <div class="row">
+                                      <div class="col-md-12">
+
+                                        <p>
+                                          <i class="icon-user"></i> by <a href="#">Tom Riddle</a> 
+                                          | <i class="icon-calendar"></i> February 1972
+                                          | <i class="icon-comment"></i> <a href="#">2 Comments</a><br>
+                                          <i class="icon-tags"></i> Tags : <a href="#">1972</a> <a href-"#">louie st</a> <a href ="#">riddle</a></a> 
+
+                                      </p>
+                                  </div>
+                              </div>
+                          </div>
+                      </div>
+                  </div>
+                  <div class="item  col-xs-4 col-lg-4">
+                    <div class="thumbnail">
+                        <a href="#"><img class="group list-group-image" src="http://www.ashevilleguidebook.com/wnc/daytrips/day%20trips%20images/qq.jpg" alt="" width = 350 height=218.75 /></a>
+                        <div class="caption">
+                            <h4 class="group inner list-group-item-heading">
+                                View of Downtown</h4>
+                                <p class="group inner list-group-item-text">
+                                    A photo of the commercial store and apartment owned by Charles Green from August 1965. </p>
+                                    <div class="row">
+                                      <div class="col-md-12">
+
+                                        <p>
+                                          <i class="icon-user"></i> by <a href="#">Cecilia Prowess</a> 
+                                          | <i class="icon-calendar"></i> August 1962
+                                          | <i class="icon-comment"></i> <a href="#">5 Comments</a><br>
+                                          <i class="icon-tags"></i> Tags : <a href="#">1965</a> <a href-"#">louie st</a> <a href ="#">green</a></a> 
+                                          
+                                      </p>
+                                  </div>
+                              </div>
+                          </div>
+                      </div>
+                  </div>
+                  <div class="item  col-xs-4 col-lg-4">
+                    <div class="thumbnail">
+                        <a href="#"><img class="group list-group-image" src="http://asheville-nc-photography.com/wp-content/uploads/2012/04/unc-asheville.jpg" alt="" width = 350 height = 218.75 /></a>
+                        <div class="caption">
+                           <h4 class="group inner list-group-item-heading">
+                            UNC Asheville</h4>
+                            <p class="group inner list-group-item-text">
+                                A photo of the commercial store and apartment owned by Charles Green from August 1965. </p>
+                                <div class="row">
+                                  <div class="col-md-12">
+
+                                    <p>
+                                      <i class="icon-user"></i> by <a href="#">Dean Sue</a> 
+                                      | <i class="icon-calendar"></i> November 2012
+                                      | <i class="icon-comment"></i> <a href="#">3 Comments</a><br>
+                                      <i class="icon-tags"></i> Tags : <a href="#">1965</a> <a href-"#">louie st</a> <a href ="#">green</a></a> 
+                                      
+                                  </p>
+                              </div>
+                          </div>
+                      </div>
+                  </div>
+              </div>
+          </div>
+      </div>
+
+
+  </div>
+
+  <hr>
+            <!-- FOOTER -->
+      <footer>
+        <p>Website by Rachel Anderson and Lalita Maraj</p>
+      </footer>
+      <!-- /END OF FOOTER -->
+

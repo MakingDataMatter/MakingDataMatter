@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="">
+    <meta name="author" content="">
+
+    <title>Starter Template for Bootstrap</title>
+
+    <!-- Bootstrap core CSS -->
+    <link href="../css/bootstrap.css" rel="stylesheet">
+
+    <!-- Add custom CSS here -->
+    <link href="../css/simple-sidebar.css" rel="stylesheet">
+
+     <link href="../css/global.css" rel="stylesheet">
+
+
+  </head>
+
+  <body>
+  
+    <div id="wrapper">
+      
+      <!-- Sidebar -->
+      <div id="sidebar-wrapper">
+        <ul class="sidebar-nav">
+          <li class="sidebar-brand"><a href="home.html">
+            <span class="glyphicon glyphicon-home home-icon"></span>
+            &nbsp;&nbsp;&nbsp;&nbsp;Making Data Matter</a></li>
+          <li><a href="#">Map <span class="glyphicon glyphicon-map-marker"></span></a></li>
+          <li><a href="photo-gallery.html">Photo Gallery<span class="glyphicon glyphicon-picture"></span></a></li>
+          <li><a href="discussion.html">Discussion Board<span class="glyphicon glyphicon-tasks"></span></a></li>
+          <li><a href="#">Property Search<span class="glyphicon glyphicon-search"></span></a></li>
+          <li><a href="settings.html">Settings<span class="glyphicon glyphicon-cog"></span></a></li>
+          <li><a href="sign-in.html">Sign Up | Log In<span class="glyphicon glyphicon-user"></span></a></li> 
+        </ul>
+      </div>
+          
+      <!-- Page content -->
+      <div id="page-content-wrapper">
+        <div class="content-header">
+          <h1>
+            <a id="menu-toggle" href="#" class="btn btn-default"><i class="icon-reorder"></i></a>
+            Page Title
+          </h1>
+        </div>
+        <!-- Keep all page content within the page-content inset div! -->
+        <div class="page-content inset">
+          
+      
+    </div>
+  
+    <!-- Bootstrap core JavaScript -->
+    <!-- Placed at the end of the document so the pages load faster -->
+    <script src="../js/jquery.js"></script>
+    <script src="../js/bootstrap.js"></script>
+    <!-- Put this into a custom JavaScript file to make things more organized -->
+    <script>
+    $("#menu-toggle").click(function(e) {
+        e.preventDefault();
+        $("#wrapper").toggleClass("active");
+    });
+    </script>
+  </body>
+</html>

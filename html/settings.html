@@ -1,0 +1,166 @@
+
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="">
+  <meta name="author" content="">
+
+ 
+    <title>Settings</title>
+
+  <!-- Bootstrap core CSS -->
+  <link href="../css/bootstrap.css" rel="stylesheet">
+
+  <!-- Add custom CSS here -->
+  <link href="../css/shop-homepage.css" rel="stylesheet">
+  <link href="../css/global.css" rel="stylesheet">
+  <link href="../css/property.css" rel="stylesheet">
+
+ <style type="text/css">
+.navbar-brand {
+  font-family: "Arial Rounded MT Bold", "Helvetica Rounded", Arial, sans-serif;
+  float: left;
+  padding: 15px 15px;
+  font-size: 18px;
+  line-height: 20px;
+}
+
+.nav{
+  font-family: "Arial Rounded MT Bold", "Helvetica Rounded", Arial, sans-serif;
+}
+
+.form-control {
+  margin-top: 9px;
+}
+
+</style>
+<!-- end style stuff -->
+  </head>
+
+
+<body>
+
+  <nav class="navbar navbar-fixed-top navbar-inverse" role="navigation">
+      <div class="container">
+        <div class="navbar-header">
+          <button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".navbar-ex1-collapse">
+            <span class="sr-only">Toggle navigation</span>
+            <span class="icon-bar"></span>
+            <span class="icon-bar"></span>
+            <span class="icon-bar"></span>
+          </button>
+          <a class="navbar-brand" href="new_home.html"><span class="glyphicon glyphicon-home"></span>&nbsp;Making Data Matter</a>
+        </div>
+
+        <!-- Collect the nav links, forms, and other content for toggling -->
+        <div class="collapse navbar-collapse navbar-ex1-collapse">
+          <ul class="nav navbar-nav">
+            <li><a href="about.html"><span class="glyphicon glyphicon-tower"></span>&nbsp;About</a></li>
+            <li><a href="photo-gallery.html"><span class="glyphicon glyphicon-picture"></span>&nbsp;Photo Gallery</a></li>
+            <li><a href="discussion.html"><span class="glyphicon glyphicon-comment"></span>&nbsp;Discussion</a></li>
+            <li><a href="news.html"><span class="glyphicon glyphicon-globe"></span>&nbsp; News</a></li>
+            <li><a class = "selected" href="settings.html"><span class="glyphicon glyphicon-cog"></span>&nbsp;Settings&nbsp;&nbsp;</a></li>
+
+            <li><input type="search" class="form-search form-control" placeholder="Enter a search term" required autofocus></li>
+
+
+             <li><a href="sign-in.html"><span class="glyphicon glyphicon-user"></span>&nbsp;Sign Up | Log In</a></li> 
+             
+          </ul>
+        </div><!-- /.navbar-collapse -->
+      </div><!-- /.container -->
+    </nav>
+
+
+  <div class="container">
+
+    <div class="row">
+<div role="main" aria-labelledby="content-main-heading" class="content-main">
+  <div class="content-header">
+    <div class="header-inner">
+      <h2 id="content-main-heading">Account</h2>
+    </div>
+    <h4>Change your basic account and language settings.</h4>
+  </div>
+
+
+  <div class="content-inner no-stream-end">
+    <form id="account-form" class="form-horizontal requires-password" method="POST" action="https://twitter.com/settings/accounts/update">
+      <div id="settings-alert-box" class="alert hidden">
+        <i id="settings-alert-close" class="close"></i>
+      </div>
+      <input type="hidden" value="PUT" name="_method">
+      <input type="hidden" name="authenticity_token" value="cd1b0897dd752a98ca48a5958f17342b724f8ee1">
+
+      
+      <input type="hidden" id="orig_uname" name="orig_uname" value="oompaloompakid">
+      <input type="hidden" id="orig_email" name="orig_email" value="katakid2@gmail.com">
+
+      <fieldset id="username_fieldset" class="control-group">
+        <label for="user_screen_name" class="control-label">Username</label>
+        <div class="controls">
+          <p id="username_notification" class="notification"></p>
+          <input id="user_screen_name" maxlength="15" name="user[screen_name]" type="text" value="User Name">
+          <p class="notification">https://twitter.com/<span id="username_path">oompaloompakid</span></p>
+        </div>
+      </fieldset>
+
+
+      <fieldset id="email_fieldset" class="control-group">
+        <label for="user_email" class="control-label">Email</label>
+        <div class="controls">
+          <p id="email_notification" class="notification"></p>
+          <input id="user_email" class="email-input" name="user[email]" type="text" value="katakid2@gmail.com">
+          <p>Email will not be publicly displayed. <a href="https://support.twitter.com/articles/15356" target="_blank">Learn more</a>.</p>
+        </div>
+      </fieldset>
+      </div>
+          
+<fieldset class="control-group">
+        <label for="user_nsfw_view" class="control-label">Privacy</label>
+        <div class="controls">
+          <label class="checkbox">
+            <input  id="user_nsfw_view" name="user[nsfw_view]" type="checkbox" value="1"> Do not inform me before showing media that may be sensitive
+          </label>
+          <input type="hidden" value="0" name="user[nsfw_view]">
+          <p>You will see all photos or videos even if they contain sensitive media.</p>
+            <label class="checkbox">
+              <input  id="user_nsfw_user" name="user[nsfw_user]" type="checkbox" value="1"> Mark media I post as containing material that may be sensitive
+            </label>
+            <input type="hidden" value="0" name="user[nsfw_user]">
+          <p>Please check this box if your Tweets contain sensitive media so that users can be informed prior to viewing.</p>
+        </div>
+      </fieldset>
+
+
+      
+    </div>
+
+</div>
+
+</div><!-- /.container -->
+
+<div class="container">
+
+  <hr>
+
+  <footer>
+    <div class="row">
+      <div class="col-lg-12">
+        <p>Copyright &copy; Company 2013</p>
+      </div>
+    </div>
+  </footer>
+
+</div><!-- /.container -->
+
+<!-- JavaScript -->
+<script src="../js/jquery-1.10.2.js"></script>
+<script src="../js/bootstrap.js"></script>
+<script src="../js/property.js"></script>
+
+</body>
+</html>

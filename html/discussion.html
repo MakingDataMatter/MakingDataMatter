@@ -1,0 +1,155 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="">
+  <meta name="author" content="">
+
+  <title>Discussion Boards</title>
+
+  <!-- Bootstrap core CSS -->
+  <link href="../css/bootstrap.css" rel="stylesheet">
+  <link href="../css/global.css" rel="stylesheet">
+  <!-- Add custom CSS here -->
+  <link href="../css/shop-homepage.css" rel="stylesheet">
+  <link href="../css/global.css" rel="stylesheet">
+  <link href="../css/news.css" rel="stylesheet">
+
+  <style type="text/css">
+  .navbar-brand {
+    font-family: "Arial Rounded MT Bold", "Helvetica Rounded", Arial, sans-serif;
+    float: left;
+    padding: 15px 15px;
+    font-size: 18px;
+    line-height: 20px;
+  }
+
+  .nav{
+    font-family: "Arial Rounded MT Bold", "Helvetica Rounded", Arial, sans-serif;
+  }
+
+  .form-control {
+    margin-top: 9px;
+  }
+
+  </style>
+  <!-- end style stuff -->
+</head>
+
+</head>
+
+<body>
+ <nav class="navbar navbar-fixed-top navbar-inverse" role="navigation">
+  <div class="container">
+    <div class="navbar-header">
+      <button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".navbar-ex1-collapse">
+        <span class="sr-only">Toggle navigation</span>
+        <span class="icon-bar"></span>
+        <span class="icon-bar"></span>
+        <span class="icon-bar"></span>
+      </button>
+      <a class="navbar-brand" href="new_home.html"><span class="glyphicon glyphicon-home"></span>&nbsp;Making Data Matter</a>
+    </div>
+
+    <!-- Collect the nav links, forms, and other content for toggling -->
+    <div class="collapse navbar-collapse navbar-ex1-collapse">
+     <ul class="nav navbar-nav">
+      <li><a   href="about.html"><span class="glyphicon glyphicon-tower"></span>&nbsp;About</a></li>
+      
+      <li><a href="propertycomparison.html"><span class="glyphicon glyphicon-folder-open"></span>&nbsp;&nbsp;Properties</a></li>
+
+
+      <li><a href="photo-gallery.html"><span class="glyphicon glyphicon-picture"></span>&nbsp;Photo Gallery</a></li>
+
+      <li><a class="selected" href="discussion.html"><span class="glyphicon glyphicon-comment"></span>&nbsp;Discussion</a></li>
+      <li><a href="news.html"><span class="glyphicon glyphicon-globe"></span>&nbsp; News</a></li>
+      
+      <li><input type="search" class="form-search form-control" placeholder="Enter a search term" required autofocus></li>
+
+
+      <li><a href="sign-in.html"><span class="glyphicon glyphicon-user"></span>&nbsp;Sign Up | Log In</a></li> 
+      
+    </ul>
+  </div><!-- /.navbar-collapse -->
+</div><!-- /.container -->
+</nav>
+
+<div class="container">
+
+  <div class="row">
+
+
+    <div >
+
+      <div class="row">
+
+        <div class="col-md-12">
+         <div class="jumbotron newsHeader">
+          <h1 class="page_title">Discussion Boards</h1>
+          <p></p>
+          
+        </div>
+      </div>
+
+    </div>
+
+
+
+  </div>
+
+</div>
+<div class="row">
+
+  <div class="panel panel-primary">
+    <div class="panel-body">
+      <h2>Current Discussions</h2>
+    </div>
+    <div class="panel-footer">
+
+      <div id="disqus_thread"></div>
+      <script type="text/javascript">
+      /* * * CONFIGURATION VARIABLES: EDIT BEFORE PASTING INTO YOUR WEBPAGE * * */
+        var disqus_shortname = 'makingdatamatter'; // required: replace example with your forum shortname
+
+        /* * * DON'T EDIT BELOW THIS LINE * * */
+        (function() {
+          var dsq = document.createElement('script'); dsq.type = 'text/javascript'; dsq.async = true;
+          dsq.src = '//' + disqus_shortname + '.disqus.com/embed.js';
+          (document.getElementsByTagName('head')[0] || document.getElementsByTagName('body')[0]).appendChild(dsq);
+        })();
+        </script>
+        <noscript>Please enable JavaScript to view the <a href="http://disqus.com/?ref_noscript">comments powered by Disqus.</a></noscript>
+        <a href="http://disqus.com" class="dsq-brlink">comments powered by <span class="logo-disqus">Disqus</span></a>
+        
+      </div>
+
+      
+    </div>
+  </div>
+</div>
+</div>
+
+</div><!-- /.container -->
+
+<div class="container">
+
+  <hr>
+
+  <!-- FOOTER -->
+  <footer>
+    <p>Website by Rachel Anderson and Lalita Maraj</p>
+  </footer>
+  <!-- /END OF FOOTER -->
+
+
+</div><!-- /.container -->
+
+<!-- JavaScript -->
+<script src="js/jquery-1.10.2.js"></script>
+<script src="js/bootstrap.js"></script>
+
+</body>
+
+</html>

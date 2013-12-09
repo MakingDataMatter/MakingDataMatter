@@ -1,0 +1,206 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="">
+  <meta name="author" content="">
+
+  <title>Property Comparison</title>
+
+  <!-- Bootstrap core CSS -->
+  <link href="../css/bootstrap.css" rel="stylesheet">
+
+  <!-- Add custom CSS here -->
+  <link href="../css/shop-homepage.css" rel="stylesheet">
+  <link href="../css/global.css" rel="stylesheet">
+  <link href="../css/property.css" rel="stylesheet">
+
+<style type="text/css">
+.navbar-brand {
+  font-family: "Arial Rounded MT Bold", "Helvetica Rounded", Arial, sans-serif;
+  float: left;
+  padding: 15px 15px;
+  font-size: 18px;
+  line-height: 20px;
+}
+
+.nav{
+  font-family: "Arial Rounded MT Bold", "Helvetica Rounded", Arial, sans-serif;
+}
+
+.form-control {
+  margin-top: 9px;
+}
+
+</style>
+
+</head>
+
+<body>
+<nav class="navbar navbar-fixed-top navbar-inverse" role="navigation">
+      <div class="container">
+        <div class="navbar-header">
+          <button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".navbar-ex1-collapse">
+            <span class="sr-only">Toggle navigation</span>
+            <span class="icon-bar"></span>
+            <span class="icon-bar"></span>
+            <span class="icon-bar"></span>
+          </button>
+          <a class="navbar-brand" href="home.html"><span class="glyphicon glyphicon-home"></span>&nbsp;Making Data Matter</a>
+        </div>
+
+        <!-- Collect the nav links, forms, and other content for toggling -->
+        <div class="collapse navbar-collapse navbar-ex1-collapse">
+            <ul class="nav navbar-nav">
+            <li><a href="about.html"><span class="glyphicon glyphicon-tower"></span>&nbsp;About</a></li>
+          
+            <li><a class="selected" href="propertycomparison.html"><span class="glyphicon glyphicon-folder-open"></span>&nbsp;&nbsp;Properties</a></li>
+
+
+            <li><a href="photo-gallery.html"><span class="glyphicon glyphicon-picture"></span>&nbsp;Photo Gallery</a></li>
+
+            <li><a href="discussion.html"><span class="glyphicon glyphicon-comment"></span>&nbsp;Discussion</a></li>
+            <li><a href="news.html"><span class="glyphicon glyphicon-globe"></span>&nbsp; News</a></li>
+            
+            <li><input type="search" class="form-search form-control" placeholder="Enter a search term" required autofocus></li>
+
+
+             <li><a href="sign-in.html"><span class="glyphicon glyphicon-user"></span>&nbsp;Sign Up | Log In</a></li> 
+             
+          </ul>
+        </div><!-- /.navbar-collapse -->
+      </div><!-- /.container -->
+    </nav>
+
+  <div class="container">
+
+    <div class="row">
+
+
+      <div >
+
+        <div class="row">
+
+          <div class="col-md-12">
+           <div class="jumbotron propertyHeader">
+            <h1 class="page_title">Property Comparison</h1>
+            <p></p>
+
+          </div>
+        </div>
+
+      </div>
+
+
+
+    </div>
+
+  </div>
+  <div class="row">
+
+    <div class="panel panel-primary">
+      <div class="panel-body">
+        <h2>Property Comparison</h2>
+      </div>
+      <div class="panel-footer">
+
+       <form role="form">
+        <fieldset >
+
+          <div class="form-group">
+            <label for="disabledSelect">Select Address from list</label>
+            <select id="propertyoptions" class="form-control">
+              <option>10 Louie St.</option>
+              <option>460 S. French Broad Ave.</option>
+              <option>471 S. French Broad Ave</option>
+              <option>477 S. French Broad Ave</option>
+            </select>
+          </div>
+   <!--  <div class="checkbox">
+     
+ </div> -->
+ <button  class="btn btn-info" >Add Property</button>
+ <button class="btn btn-primary" onclick="getData()">Submit</button>
+</fieldset>
+</form>
+</div>
+
+
+</div>
+</div>
+<div class="row">
+  <div class="well">
+    <h3>Properties</h3>
+ <div class="properties">
+  <ul></ul>
+ </div>
+  </div>
+  </div>
+<div class="row">
+  <div class="contentTable">
+    <table class="table table table-bordered   table-condensed table-hover">
+      <tr>
+        <th>Address</th>
+        <th>Owner</th>
+        <th>House Type</th>
+        <th>Tenant</th>
+      </tr>
+      <tr>
+        <td><a href="sample_profile.html" >10 Louie St.</a></td>
+        <td>-</td>
+        <td>Commercial (store and apartment)</td>
+        <td>Charles Green (Renting for 1 mo. starting Apr. 1, 1969 for $20.00: "Unable to work full time because of heart condition, income very small")</td>
+      </tr>
+      <tr>
+        <td><a href"">460 S. French Broad Ave.</a></td>
+        <td>-</td>
+        <td>Pool room and club</td>
+        <td>-</td>
+      </tr>
+      <tr>
+        <td><a href"">471 S. French Broad Ave</a></td>
+        <td>-</td>
+        <td>2-family</td>
+        <td>-</td>
+      </tr>
+      <tr>
+        <td><a href"">477 S. French Broad Ave</a></td>
+        <td>-</td>
+        <td>4-family</td>
+        <td> <ul><li>Tenant Apt #1: Herbert Robinson (Renting for 1 mo. for $15.00, starting Apr. 1, 1969)</li>
+          <li> Tenant Apt #2: Howard Robinson (Renting for 1 mo. for $10.00, starting Apr. 1, 1969)</li>
+          <li>Tenant Apt #3: James Harris (Renting for 1 mo. starting Apr. 1, 1969 for $20.00. Rented from May 1 to May 13.  Vacated to 28 Velvet St. on May 14)</li>
+          <li> Tenant: Emma Orr (Renting for 1 mo. starting Apr. 1, 1969 for $10.00)</li></ul>
+        </td>
+      </tr>
+    </table>
+  </div>
+</div>
+</div>
+</div>
+
+</div><!-- /.container -->
+
+<div class="container">
+
+  <hr>
+
+       <!-- FOOTER -->
+      <footer>
+        <p>Website by Rachel Anderson and Lalita Maraj</p>
+      </footer>
+      <!-- /END OF FOOTER -->
+
+</div><!-- /.container -->
+
+
+
+<!-- JavaScript -->
+<script src="../js/jquery-1.10.2.js"></script>
+<script src="../js/bootstrap.js"></script>
+<script src="../js/property.js"></script>
+
+</body>
+</html>

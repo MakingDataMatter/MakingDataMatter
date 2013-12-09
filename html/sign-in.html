@@ -1,0 +1,183 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="">
+  <meta name="author" content="">
+
+  <title>Sign In</title>
+
+  <!-- Bootstrap core CSS -->
+  <link href="../css/bootstrap.css" rel="stylesheet">
+
+  <!-- Add custom CSS here -->
+  <link href="../css/shop-homepage.css" rel="stylesheet">
+  <link href="../css/global.css" rel="stylesheet">
+
+<!-- style override -->
+    <!-- Le styles -->
+   
+    <style type="text/css">
+      /* Override some defaults */
+.navbar-brand {
+  font-family: "Arial Rounded MT Bold", "Helvetica Rounded", Arial, sans-serif;
+  float: left;
+  padding: 15px 15px;
+  font-size: 18px;
+  line-height: 20px;
+}
+
+.nav{
+  font-family: "Arial Rounded MT Bold", "Helvetica Rounded", Arial, sans-serif;
+}
+
+.form-control {
+  margin-top: 9px;
+}
+
+  body {
+    margin-top: 50px;
+    padding-top: 15px;
+    /*font-size: 12px*/
+  }
+  .main {
+    max-width: 320px;
+    margin: 0 auto;
+  }
+  .login-or {
+    position: relative;
+    font-size: 18px;
+    color: #aaa;
+    margin-top: 10px;
+            margin-bottom: 10px;
+    padding-top: 10px;
+    padding-bottom: 10px;
+  }
+  .span-or {
+    display: block;
+    position: absolute;
+    left: 50%;
+    top: -2px;
+    margin-left: -25px;
+    background-color: #fff;
+    width: 50px;
+    text-align: center;
+  }
+  .hr-or {
+    background-color: #cdcdcd;
+    height: 1px;
+    margin-top: 0px !important;
+    margin-bottom: 0px !important;
+  }
+  h3 {
+    text-align: center;
+    line-height: 300%;
+  }
+
+    </style>
+
+</head>
+
+ <body>
+
+    <nav class="navbar navbar-fixed-top navbar-inverse" role="navigation">
+      <div class="container">
+        <div class="navbar-header">
+          <button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".navbar-ex1-collapse">
+            <span class="sr-only">Toggle navigation</span>
+            <span class="icon-bar"></span>
+            <span class="icon-bar"></span>
+            <span class="icon-bar"></span>
+          </button>
+          <a class="navbar-brand" href="new_home.html"><span class="glyphicon glyphicon-home"></span>&nbsp;Making Data Matter</a>
+        </div>
+
+        <!-- Collect the nav links, forms, and other content for toggling -->
+        <div class="collapse navbar-collapse navbar-ex1-collapse">
+                     <ul class="nav navbar-nav">
+            <li><a href="about.html"><span class="glyphicon glyphicon-tower"></span>&nbsp;About</a></li>
+          
+            <li><a  href="propertycomparison.html"><span class="glyphicon glyphicon-folder-open"></span>&nbsp;&nbsp;Properties</a></li>
+
+
+            <li><a href="photo-gallery.html"><span class="glyphicon glyphicon-picture"></span>&nbsp;Photo Gallery</a></li>
+
+            <li><a href="discussion.html"><span class="glyphicon glyphicon-comment"></span>&nbsp;Discussion</a></li>
+            <li><a  href="news.html"><span class="glyphicon glyphicon-globe"></span>&nbsp; News</a></li>
+            
+            <li><input type="search" class="form-search form-control" placeholder="Enter a search term" required autofocus></li>
+
+
+             <li><a class="selected"  href="sign-in.html"><span class="glyphicon glyphicon-user"></span>&nbsp;Sign Up | Log In</a></li> 
+             
+          </ul>
+        </div><!-- /.navbar-collapse -->
+      </div><!-- /.container -->
+    </nav>
+      <!-- Page content -->
+   <div class="container">
+  <div class="row">
+
+    <div class="main">
+
+      <h3>Please Log In, or <a href="#">Sign Up</a></h3>
+      <div class="row">
+        <div class="col-xs-6 col-sm-6 col-md-6">
+          <a href="#" class="btn btn-lg btn-primary btn-block">Facebook</a>
+        </div>
+        <div class="col-xs-6 col-sm-6 col-md-6">
+          <a href="#" class="btn btn-lg btn-info btn-block">Google</a>
+        </div>
+      </div>
+      <div class="login-or">
+        <hr class="hr-or">
+        <span class="span-or">or</span>
+      </div>
+
+      <form role="form">
+        <div class="form-group">
+          <label for="inputUsernameEmail">Username or email</label>
+          <input type="text" class="form-control" id="inputUsernameEmail">
+        </div>
+        <div class="form-group">
+          <a class="pull-right" href="#">Forgot password?</a>
+          <label for="inputPassword">Password</label>
+          <input type="password" class="form-control" id="inputPassword">
+        </div>
+        <div class="checkbox pull-right">
+          <label>
+            <input type="checkbox">
+            Remember me </label>
+        </div>
+        <button type="submit" class="btn btn btn-primary">
+          Log In
+        </button>
+      </form>
+    
+    </div>
+    
+  </div>
+  <hr>
+              <!-- FOOTER -->
+      <footer>
+        <p>Website by Rachel Anderson and Lalita Maraj</p>
+      </footer>
+      <!-- /END OF FOOTER -->
+
+</div> 
+  
+    <!-- Bootstrap core JavaScript -->
+    <!-- Placed at the end of the document so the pages load faster -->
+    <script src="../js/jquery.js"></script>
+    <script src="../js/bootstrap.js"></script>
+    <!-- Put this into a custom JavaScript file to make things more organized -->
+    <script>
+    $("#menu-toggle").click(function(e) {
+        e.preventDefault();
+        $("#wrapper").toggleClass("active");
+    });
+    </script>
+
+  </body>
+</html>
